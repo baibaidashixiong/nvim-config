@@ -24,16 +24,16 @@ vim.cmd([[
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
+  use "EdenEast/nightfox.nvim" -- theme
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
   use {
     'nvim-tree/nvim-tree.lua', --Document tree
-    requires = {
-      'nvim-tree/nvim-web-devicons', -- Document tree icon
-    },
+    'nvim-tree/nvim-web-devicons', -- Document tree icon
   }
   use("christoomey/vim-tmux-navigator") -- use ctrl+hjkl to locate window
   use "nvim-treesitter/nvim-treesitter" -- syntax on

@@ -31,4 +31,6 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- set as default theme
-vim.cmd[[colorscheme tokyonight-moon]]
+-- vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[colorscheme nightfox]]
+
