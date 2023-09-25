@@ -24,7 +24,7 @@ vim.cmd([[
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  -- use 'folke/tokyonight.nvim'
+  use 'folke/tokyonight.nvim'
   use "EdenEast/nightfox.nvim" -- theme
 
   use {

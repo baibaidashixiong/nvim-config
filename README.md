@@ -4,4 +4,5 @@ TODO():
   1. Markdown text parsing
   2. ssh config
   3. debug information
+  4. function jump(ctags)
   ...
