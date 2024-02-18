@@ -24,6 +24,13 @@ require("lspconfig").lua_ls.setup {
   capabilities = capabilities,
 }
 require("lspconfig").clangd.setup {
+  cmd = {
+    "clangd",
+    "--query-driver=/usr/bin/clang++",
+    "--clang-tidy",
+    "--clang-tidy-checks=performance-*,bugprone-*",
+  },
+  filetypes = { "c", "cpp" },
   capabilities = capabilities,
 }
 require("lspconfig").jdtls.setup {}
