@@ -58,7 +58,7 @@ return require('packer').startup(function(use)
   use "lewis6991/gitsigns.nvim" -- git prompt left 
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- file searcher
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',  -- file searcher
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
