@@ -56,6 +56,7 @@ return require('packer').startup(function(use)
 
   use "akinsho/bufferline.nvim" -- buffer line split
   use "lewis6991/gitsigns.nvim" -- git prompt left 
+  use "liuchengxu/vista.vim"
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.4',  -- file searcher

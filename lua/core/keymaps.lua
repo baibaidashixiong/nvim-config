@@ -9,8 +9,8 @@ local opt = {
 
 
 -- visual mode --
--- move one or more line --
--- line in visual then use shift+i/j
+-- move a line down or up --
+-- line in visual then use shift+j/k
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -24,9 +24,16 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- plugins --
 -- nvim-tree
 keymap.set("n", "<leader>tr", ":NvimTreeToggle<CR>")
+
+-- Vista
+keymap.set("n", "<leader>vs", ":Vista<CR>")
+keymap.set("n", "<leader>vn", ":Vista nvim_lsp<CR>")
+
 -- bufferline
   -- switch buffer
 keymap.set("n", "<A-l>", ":bnext<CR>", opt)
 keymap.set("n", "<A-h>", ":bprevious<CR>", opt)
   -- close buffer
 keymap.set("n", "<C-w>", ":bd<CR>", opt)
+keymap.set("n", "H", "<C-W>>", opt)
+keymap.set("n", "L", "<C-W><", opt)
