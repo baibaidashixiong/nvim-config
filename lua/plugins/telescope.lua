@@ -5,7 +5,7 @@ require('telescope').setup{
       "out/",
       ".vscode/",
       "objs/"
-    }
+    },
   }
 }
 
