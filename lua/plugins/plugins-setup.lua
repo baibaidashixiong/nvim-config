@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
   use "hrsh7th/cmp-path" -- file path
+  use 'karb94/neoscroll.nvim' -- scroll smoothly
 
   use "numToStr/Comment.nvim" --gcc and gc annotation
   use "windwp/nvim-autopairs" --Automatic completion of bracket
